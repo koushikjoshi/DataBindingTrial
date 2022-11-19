@@ -23,7 +23,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun displayGreetingText() {
 
-        binding.greetingTextView.text = "Hello " + binding.nameEditText.text
+        binding.apply {
+
+            greetingTextView.text = "Hello " + nameEditText.text
+
+        }
+
+
 
     }
 }
